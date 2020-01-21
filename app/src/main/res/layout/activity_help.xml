@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@color/theme"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back_layout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/back_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/arrow_image" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="도움말"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#d7d5d5" />
+
+                        <LinearLayout
+                            android:id="@+id/helplinear1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#FFEDECEC"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/helpbutton1"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/helparrow"
+                                    android:gravity="center" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#d7d5d5" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center"
+                                android:text="이 어플을 사용하면 유언장 법적 효력이 있나요?"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#d7d5d5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/helptext1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#f6f6f6"
+                        android:gravity="center"
+                        android:text="유언 법적효력이 없습니다.\n사용자들이 다이어리를 쓰면서\n유언장처럼 생각을 한다면\n삶을 돌아보기에 좋을것이라 생각해서\n만들게 되었습니다."
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                    <LinearLayout
+                        android:id="@+id/helplinear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FFEDECEC"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/helpbutton2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/helparrow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#d7d5d5" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:text="이 어플을 사용해서 법적 효력을 가질수는 없나요?"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                    <TextView
+                        android:id="@+id/helptext2"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="#f6f6f6"
+                        android:gravity="center"
+                        android:text="이 어플엔 동영상 촬영 기능이 있습니다.\n유언은 엄격한 요식행위로서 민법에 규정한 다섯가지 방식에\n의하지 않은 것은 유언으로서 효력이 없습니다.\n다섯가지 방식중 동영상으로 만든 유언도 녹음에 의한 유언의 방식을 갖추게 된다면 효력이 있습니다.
+ "
+
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                    <LinearLayout
+                        android:id="@+id/helplinear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FFEDECEC"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/helpbutton3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/helparrow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#d7d5d5" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:text="녹음의 방법에 의한 유언이 무엇인가요?"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                    <TextView
+                        android:id="@+id/helptext3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#f6f6f6"
+                        android:gravity="center"
+                        android:text="녹음에 의한 유언은 유언자가 유언의 취지, 그 성명과 연월일을\n구술(口述)하고 참여한 증인(證人)이 유언의 정확함과\n그 성명을 구술함으로써 성립한다.\n(민법 제1067조)"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                    <LinearLayout
+                        android:id="@+id/helplinear4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FFEDECEC"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/helpbutton4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/helparrow" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#d7d5d5" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:text="증인이라면 어떤사람이 증인이 되는건가요?"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                    <TextView
+                        android:id="@+id/helptext4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#f6f6f6"
+                        android:gravity="center"
+                        android:text="유언에 의해 이익을 받는 사람과 그 배우자(配偶者)\n및 직계혈족(直系血族)이 증인이 될 수 없다는 것(1072조)은\n다른 방식에 의한 유언의 경우와 같다."
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d5d5" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
